@@ -13,12 +13,13 @@ def main() -> None:
     create_database(db_name, config)
     create_tables(db_name, config)
 
-    # print('Получение данных о работодателях и вакансиях ...\n')
-    # employers_data = get_employers()
-    # vacancies_data = get_all_vacancies()
-    #
-    # insert_employers(employers_data, db_name, config)
-    # insert_vacancies(vacancies_data, db_name, config)
+    print('Получение данных о работодателях и вакансиях ...\n')
+    employers_data = get_employers()
+    vacancies_data = get_all_vacancies()
+
+
+    insert_employers(employers_data, db_name, config)
+    insert_vacancies(vacancies_data, db_name, config)
     print("База данных успешно инициализирована\n")
     user_menu()
 

@@ -20,10 +20,10 @@ def user_menu() -> None:
     # print('Создание и наполнение базы данных ...\n')
     # create_database(DB_NAME, DB_CONFIG)
     # create_tables(DB_NAME, DB_CONFIG)
-    print('Получение данных о работодателях и вакансиях ...\n')
-    insert_employers(employers_data, DB_NAME, DB_CONFIG)
-    insert_vacancies(vacancies_data, DB_NAME, DB_CONFIG)
-    print("База данных успешно инициализирована\n")
+    # print('Получение данных о работодателях и вакансиях ...\n')
+    # insert_employers(employers_data, DB_NAME, DB_CONFIG)
+    # insert_vacancies(vacancies_data, DB_NAME, DB_CONFIG)
+    # print("База данных успешно инициализирована\n")
     print()
 
     while True:
