@@ -7,14 +7,14 @@ HH_URL_VACANCIES = "https://api.hh.ru/vacancies"
 
 # Список ID работодателей для выборки информации через API
 HH_EMPLOYERS_ID = [
-    1429999,   # Employer 1
+    5600787,   # Employer 1
     1035394,   # Employer 2
     5585118,   # Employer 3
-    561525,    # Employer 4
-    84585,     # Employer 5
-    5600787,   # Employer 6
-    2180,      # Employer 7
+    1429999,   # Employer 4
+    9498120,   # Employer 5
+    561525,    # Employer 6
+    84585,     # Employer 7
     12550,     # Employer 8
-    3529,      # Employer 9
-    9498120    # Employer 10
+    2180,      # Employer 9
+    3529,      # Employer 10
 ]
