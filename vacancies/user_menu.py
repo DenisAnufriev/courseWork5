@@ -1,10 +1,10 @@
-from vacancies.utils import get_employers, get_all_vacancies
-from vacancies.db_create import create_database, create_tables, insert_employers, insert_vacancies
-from vacancies.db_manager import DBManager
 from config import get_db_config
+from vacancies.db_manager import DBManager
+from vacancies.utils import get_employers, get_all_vacancies
 
 DB_CONFIG = get_db_config()
 DB_NAME = 'HeadHunter'
+
 
 def user_menu() -> None:
     """

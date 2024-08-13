@@ -1,6 +1,8 @@
-import requests
-import jmespath
 from typing import Any
+
+import jmespath
+import requests
+
 from constant import HH_EMPLOYERS_ID, HH_URL_EMPLOYERS, HH_URL_VACANCIES
 
 

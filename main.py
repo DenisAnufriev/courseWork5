@@ -1,7 +1,8 @@
+from config import get_db_config
+from vacancies.db_create import create_database, create_tables, insert_employers, insert_vacancies
 from vacancies.user_menu import user_menu
 from vacancies.utils import get_employers, get_all_vacancies
-from vacancies.db_create import create_database, create_tables, insert_employers, insert_vacancies
-from config import get_db_config
+
 
 def main() -> None:
     """
@@ -17,7 +18,6 @@ def main() -> None:
     employers_data = get_employers()
     vacancies_data = get_all_vacancies()
 
-
     insert_employers(employers_data, db_name, config)
     insert_vacancies(vacancies_data, db_name, config)
     print("База данных успешно инициализирована\n")
@@ -26,4 +26,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-

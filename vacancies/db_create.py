@@ -1,6 +1,7 @@
+from typing import List, Dict, Optional, Any
+
 import psycopg2
 from psycopg2 import sql
-from typing import List, Dict, Optional, Any
 
 CREATE_TABLES_REQUESTS = [
     """
@@ -23,6 +24,7 @@ CREATE_TABLES_REQUESTS = [
     );
     """
 ]
+
 
 def create_database(db_name: str, db_config: Dict[str, str]) -> None:
     """
@@ -48,6 +50,7 @@ def create_database(db_name: str, db_config: Dict[str, str]) -> None:
     finally:
         cur.close()
         conn.close()
+
 
 def create_tables(db_name: str, db_config: Dict[str, str]) -> None:
     """
@@ -75,6 +78,7 @@ def create_tables(db_name: str, db_config: Dict[str, str]) -> None:
     finally:
         cur.close()
         conn.close()
+
 
 def insert_employers(employers: List[Dict[str, Optional[str]]], db_name: str, db_config: Dict[str, str]) -> None:
     """
@@ -108,6 +112,7 @@ def insert_employers(employers: List[Dict[str, Optional[str]]], db_name: str, db
     finally:
         cur.close()
         conn.close()
+
 
 def insert_vacancies(vacancies: List[Dict[str, Optional[Any]]], db_name: str, db_config: Dict[str, str]) -> None:
     """

@@ -1,6 +1,7 @@
-import psycopg2
 from typing import Dict, Optional, List, Tuple
-from config import get_db_config
+
+import psycopg2
+
 
 class DBManager:
     """
